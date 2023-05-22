@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 class ShellSort {
-    void shellSort(int array[]) {
+    void ShellSort(int array[]) {
         int tamArray = array.length;
         for (int lacuna = tamArray / 2; lacuna > 0; lacuna /= 2) {
             for (int i = lacuna; i < tamArray; i += 1) {
@@ -41,7 +41,7 @@ class ShellSort {
 
         long inicio = System.nanoTime();
 
-        selectionSort.shellSort(numeros);
+        selectionSort.ShellSort(numeros);
 
         long fim = System.nanoTime();
         tempoDeExecucao = TimeUnit.NANOSECONDS.toMillis(fim - inicio);

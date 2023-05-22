@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class SelectionSort {
-    void selectionSort(int array[]) {
+    void SelectionSort(int array[]) {
         int tamArray = array.length;
         for (int i = 0; i < tamArray - 1; i++) {
             int elMinimo = i;
@@ -40,7 +40,7 @@ public class SelectionSort {
 
         long inicio = System.nanoTime();
 
-        selectionSort.selectionSort(numeros);
+        selectionSort.SelectionSort(numeros);
 
         long fim = System.nanoTime();
         tempoDeExecucao += TimeUnit.NANOSECONDS.toMillis(fim - inicio);

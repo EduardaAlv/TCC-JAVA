@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class InsertionSort {
-    void insertionSort(int array[]) {
+    void InsertionSort(int array[]) {
         int tamArray = array.length;
         for (int i = 1; i < tamArray; ++i) {
             int valorAtual = array[i];
@@ -40,7 +40,7 @@ public class InsertionSort {
 
         long inicio = System.nanoTime();
 
-        insertionSort.insertionSort(numeros);
+        insertionSort.InsertionSort(numeros);
 
         long fim = System.nanoTime();
         tempoDeExecucao += TimeUnit.NANOSECONDS.toMillis(fim - inicio);

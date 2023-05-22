@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class MergeSort {
-    void mergeSort(int array[], int indiceInicio, int meio, int indiceFinal) {
+    void merge(int array[], int indiceInicio, int meio, int indiceFinal) {
         int array1 = meio - indiceInicio + 1;
         int array2 = indiceFinal - meio;
 
@@ -42,12 +42,12 @@ public class MergeSort {
         }
     }
 
-    void sort(int arr[], int indiceInicial, int indiceFinal) {
+    void MergeSort(int arr[], int indiceInicial, int indiceFinal) {
         if (indiceInicial < indiceFinal) {
             int meio = indiceInicial + (indiceFinal - indiceInicial) / 2;
-            sort(arr, indiceInicial, meio);
-            sort(arr, meio + 1, indiceFinal);
-            mergeSort(arr, indiceInicial, meio, indiceFinal);
+            MergeSort(arr, indiceInicial, meio);
+            MergeSort(arr, meio + 1, indiceFinal);
+            merge(arr, indiceInicial, meio, indiceFinal);
         }
     }
 
@@ -75,7 +75,7 @@ public class MergeSort {
 
         long inicio = System.nanoTime();
 
-        mergeSort.sort(numeros, 0, numeros.length - 1);
+        mergeSort.MergeSort(numeros, 0, numeros.length - 1);
 
         long fim = System.nanoTime();
         tempoDeExecucao += TimeUnit.NANOSECONDS.toMillis(fim - inicio);
