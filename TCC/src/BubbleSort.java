@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-class BubbleSort {
+public class BubbleSort {
     void MetodoBubbleSort(int array[]) {
         int tamArray = array.length;
         for (int i = 0; i < tamArray - 1; i++) {

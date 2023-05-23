@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-class ShellSort {
+public class ShellSort {
     void MetodoShellSort(int array[]) {
         int tamArray = array.length;
         for (int lacuna = tamArray / 2; lacuna > 0; lacuna /= 2) {
