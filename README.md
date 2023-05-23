@@ -1,4 +1,4 @@
-# Comparação de Tempo de Algoritmos de Ordenação em C# e Java
+# Comparação do Desempenho de Algoritmos de Ordenação nas linguagens C# e Java
 
 Este repositório contém o trabalho de conclusão de curso (TCC) que se propõe a realizar uma comparação detalhada do tempo de execução de algoritmos de ordenação em duas linguagens de programação amplamente utilizadas: C# e Java.
 
