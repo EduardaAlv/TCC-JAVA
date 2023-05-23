@@ -26,7 +26,7 @@ O repositório está organizado da seguinte forma:
 
 1. Certifique-se de ter o ambiente de desenvolvimento adequado configurado para as linguagens C# e Java.
 2. Clone este repositório em seu ambiente local.
-3. Acesse a pasta `src/` e compile os arquivos de código-fonte em ambas as linguagens.
+3. Acesse a pasta `src/` e compile os arquivos de código-fonte.
 4. Execute os programas resultantes para realizar as medições de tempo de execução.
 
 ## Contribuindo
