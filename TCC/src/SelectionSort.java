@@ -18,7 +18,7 @@ public class SelectionSort {
     }
 
     public static void main(String args[]) throws FileNotFoundException {
-        File arquivo = new File("C:\\Users\\eduar\\Documents\\Repos\\ConsoleTeste\\ConsoleTeste\\dataDUZENTOSMIL.txt");
+        File arquivo = new File("C:\\Users\\eduar\\Documents\\Repos\\ConsoleTeste\\ConsoleTeste\\dataTRINTAMIL.txt");
         Scanner leitor = new Scanner(arquivo);
         double tempoDeExecucao = 0;
 

@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class InsertionSort {
-    void InsertionSort(int array[]) {
+    void MetodoInsertionSort(int array[]) {
         int tamArray = array.length;
         for (int i = 1; i < tamArray; ++i) {
             int valorAtual = array[i];
@@ -19,7 +19,7 @@ public class InsertionSort {
     }
 
     public static void main(String args[]) throws FileNotFoundException {
-        File arquivo = new File("C:\\Users\\eduar\\Documents\\Repos\\ConsoleTeste\\ConsoleTeste\\dataCINQUENTAMIL.txt");
+        File arquivo = new File("C:\\Users\\eduar\\Documents\\Repos\\ConsoleTeste\\ConsoleTeste\\dataDEZMIL.txt");
         Scanner leitor = new Scanner(arquivo);
         double tempoDeExecucao = 0;
 
@@ -40,7 +40,7 @@ public class InsertionSort {
 
         long inicio = System.nanoTime();
 
-        insertionSort.InsertionSort(numeros);
+        insertionSort.MetodoInsertionSort(numeros);
 
         long fim = System.nanoTime();
         tempoDeExecucao += TimeUnit.NANOSECONDS.toMillis(fim - inicio);

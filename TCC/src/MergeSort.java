@@ -42,18 +42,18 @@ public class MergeSort {
         }
     }
 
-    void MergeSort(int arr[], int indiceInicial, int indiceFinal) {
+    void MetodoMergeSort(int arr[], int indiceInicial, int indiceFinal) {
         if (indiceInicial < indiceFinal) {
             int meio = indiceInicial + (indiceFinal - indiceInicial) / 2;
-            MergeSort(arr, indiceInicial, meio);
-            MergeSort(arr, meio + 1, indiceFinal);
+            MetodoMergeSort(arr, indiceInicial, meio);
+            MetodoMergeSort(arr, meio + 1, indiceFinal);
             merge(arr, indiceInicial, meio, indiceFinal);
         }
     }
 
     public static void main(String args[]) throws FileNotFoundException {
         File arquivo = new File(
-                "C:\\Users\\eduar\\Documents\\Repos\\ConsoleTeste\\ConsoleTeste\\dataTRINTAMILHOES.txt");
+                "C:\\Users\\eduar\\Documents\\Repos\\ConsoleTeste\\ConsoleTeste\\dataTRINTAMIL.txt");
         Scanner leitor = new Scanner(arquivo);
         double tempoDeExecucao = 0;
 
@@ -75,7 +75,7 @@ public class MergeSort {
 
         long inicio = System.nanoTime();
 
-        mergeSort.MergeSort(numeros, 0, numeros.length - 1);
+        mergeSort.MetodoMergeSort(numeros, 0, numeros.length - 1);
 
         long fim = System.nanoTime();
         tempoDeExecucao += TimeUnit.NANOSECONDS.toMillis(fim - inicio);

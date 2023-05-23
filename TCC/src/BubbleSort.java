@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 class BubbleSort {
-    void BubbleSort(int array[]) {
+    void MetodoBubbleSort(int array[]) {
         int tamArray = array.length;
         for (int i = 0; i < tamArray - 1; i++) {
             for (int j = 0; j < tamArray - i - 1; j++) {
@@ -18,7 +18,7 @@ class BubbleSort {
     }
 
     public static void main(String args[]) throws FileNotFoundException {
-        File arquivo = new File("C:\\Users\\eduar\\Documents\\Repos\\ConsoleTeste\\ConsoleTeste\\dataDUZENTOSMIL.txt");
+        File arquivo = new File("C:\\Users\\eduar\\Documents\\Repos\\ConsoleTeste\\ConsoleTeste\\dataDEZMIL.txt");
         Scanner leitor = new Scanner(arquivo);
         double tempoDeExecucao = 0;
 
@@ -40,7 +40,7 @@ class BubbleSort {
 
         long inicio = System.nanoTime();
 
-        bubbleSort.BubbleSort(numeros);
+        bubbleSort.MetodoBubbleSort(numeros);
 
         long fim = System.nanoTime();
         tempoDeExecucao += TimeUnit.NANOSECONDS.toMillis(fim - inicio);
