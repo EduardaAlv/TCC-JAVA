@@ -46,11 +46,11 @@ Este trabalho é licenciado sob a [PUC Minas - Instituto de Ciências Exatas e d
 ## Contato
 Caso você tenha alguma dúvida ou sugestão relacionada ao projeto, sinta-se à vontade para entrar em contato conosco.
 
-- Eduarda Santos Alves
+### Eduarda Santos Alves
 - Bacharelanda em Sistemas de Informação
 - eduarda.alves.1216382@sga.pucminas.br
 
-- Júlia Sabrina Pereira Brisch
+### Júlia Sabrina Pereira Brisch
 - Bacharelanda em Sistemas de Informação
 - jbrisch@sga.pucminas.br
 
